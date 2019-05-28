@@ -25,7 +25,7 @@ public class SplunkApplication implements CommandLineRunner {
 	public void run(String[] args) throws Exception {
 
 		System.out.println("args: " + args[0]);
-		System.out.println("args: " + args[1]);
+		//System.out.println("args: " + args[1]);
 		// Loading ini file
 		/*FileInputStream in;
 		Properties SegmentProperties = new Properties();
