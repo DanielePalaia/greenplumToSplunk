@@ -53,6 +53,7 @@ public class SplunkEngine {
         while (line != null) {
             System.out.println(line);
             out.write(line + "\r\n");
+            line = reader.readLine();
         }
 
         out.flush();
