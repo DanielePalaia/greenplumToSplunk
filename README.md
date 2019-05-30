@@ -3,7 +3,7 @@
 ## Summary
 This prototype is continuing the experiment done here: </br>
 https://github.com/DanielePalaia/splunkExternalTables</br>
-But in this case is doing the opposite test. From a Greenplum table this is storing in parallel logs on Splunk passing through a web external table.</br>
+But in this case is doing the opposite test. From a Greenplum table this is storing in parallel logs on Splunk passing through a writable web external table.</br>
 A jar is provided </br>
 This one is taking in input a file and storing it on splunk </br>
 A bash script is encapsulating it. It catch piped input, save it on a temporary file and pass it to the .jar </br>
