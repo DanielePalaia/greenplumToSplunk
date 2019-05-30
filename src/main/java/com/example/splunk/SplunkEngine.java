@@ -51,7 +51,8 @@ public class SplunkEngine {
                 fileName));
         String line = reader.readLine();
         while (line != null) {
-            out.write(reader + "\r\n");
+            System.out.println(line);
+            out.write(line + "\r\n");
         }
 
         out.flush();
