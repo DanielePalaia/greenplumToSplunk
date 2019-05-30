@@ -24,9 +24,6 @@ public class SplunkApplication implements CommandLineRunner {
 	@Override
 	public void run(String[] args) throws Exception {
 
-		//System.out.println("args: " + args[0]);
-		//System.out.println("args: " + args[1]);
-		// Loading ini file
 		FileInputStream in;
 		Properties SegmentProperties = new Properties();
 
@@ -39,7 +36,7 @@ public class SplunkApplication implements CommandLineRunner {
 		}
 
 
-		SplunkEngine mysplunk = new SplunkEngine(args, "search", SegmentProperties.getProperty("earliest"), SegmentProperties.getProperty("latest"));
+		SplunkEngine mysplunk = new SplunkEngine(args, "search", SegmentProperties.getProperty("fileName"));
 		mysplunk.connect();
 		mysplunk.insertToSplunk();
 	}

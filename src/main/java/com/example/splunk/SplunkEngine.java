@@ -10,17 +10,14 @@ public class SplunkEngine {
 
     private Service service;
     private Command command;
-    private String query;
-    private String earliestTime;
-    private String latestTime;
+    private String fileName;
 
-
-    public SplunkEngine(String[] args, String usage, String earliest, String latest) {
+    public SplunkEngine(String[] args, String usage, String fileName) {
         command = Command.splunk(usage);
         command.parse(args);
 
-        this.earliestTime = earliest;
-        this.latestTime = latest;
+        this.fileName = fileName;
+
 
 
     }
@@ -44,14 +41,16 @@ public class SplunkEngine {
 
     {
         // Open a socket and stream
-        Socket socket = myIndex.attach();
-        OutputStream ostream = socket.getOutputStream();
+        //Socket socket = myIndex.attach();
+        /*OutputStream ostream = socket.getOutputStream();
         Writer out = new OutputStreamWriter(ostream, "UTF8");
 
         // Send events to the socket then close it
         out.write(date + "Event one!\r\n");
-        out.write(date + "Event two!\r\n");
-        out.flush();
+        out.write(date + "Event two!\r\n");*/
+
+        //out.flush();
+        myIndex.submit(this.fileName);
     }
     catch(Exception e)  {
         e.printStackTrace();
