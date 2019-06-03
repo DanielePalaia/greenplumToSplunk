@@ -1,7 +1,8 @@
 # greenplumToSplunk
 
 ## Summary
-This prototype is continuing the experiment done here: </br>
+This prototype is part of a test to experiment on the Greenplum MPP capabilities. We are trying to load a set of logs data from Greenplum to Splunk in parallel using writable web external tables</br>
+A previous experiment doing the opposite experiment (from Splunk to Greenplum) can be found here: </br>
 https://github.com/DanielePalaia/splunkExternalTables</br>
 But in this case is doing the opposite test. From a Greenplum table this is storing in parallel logs on Splunk passing through a writable web external table.</br>
 A .jar is provided (./target) </br>
