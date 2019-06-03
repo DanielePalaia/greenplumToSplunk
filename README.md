@@ -12,7 +12,7 @@ the script in then embedded on external writable web table definition </br>
 
 ## Prerequisites:
 ### 1. Generate the input Greenplum table:
-**dashboard=# select * from services limit 2; **</br>
+**dashboard=# select * from services limit 2;**</br>
   id   | version | environment |     service_level     | company_id | top_service |               name                
 -------+---------+-------------+-----------------------+------------+-------------+-----------------------------------
  10427 |       0 | Production  | DC - Business Premium |         24 | NO          | GSOC-LOCAL SECURITY INCIDENT (PT)
