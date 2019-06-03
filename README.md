@@ -11,6 +11,9 @@ the script in then embedded on external writable web table definition </br>
 </br>
 
 ## Prerequisites:
+
+It can be useful to have knowledge on external web tables in Greenplum and how they operate:</br>
+https://gpdb.docs.pivotal.io/510/admin_guide/external/g-creating-and-using-web-external-tables.</br>
 ### 1. Generate the input Greenplum table:
 **dashboard=# select * from services limit 2;**</br></br>
   id   | version | environment |     service_level     | company_id | top_service |               name                
